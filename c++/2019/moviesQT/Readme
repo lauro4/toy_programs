@@ -1,0 +1,10 @@
+==== Instructions
+
+To compile, run "qmake-qt5 moviesQT.pro && make" (requires qt5)
+
+To run this, run "./moviesQT".
+
+===== Observations
+
+This program is incomplete and doesn't display any special QT5 skill, just basic
+familiarity with QT projects.
