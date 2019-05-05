@@ -1,0 +1,22 @@
+===== Instructions
+
+To compile, run "make". (Requires g++, jsoncpp and curl)
+
+To run the program, run "./movies --search A MOVIE TITLE"
+
+===== Quick Files/Classes Overview
+
+- main.cpp contains the main function for the command line implementation of this program.
+   It handles the parameters sent by the user and prints search results as simple text on the terminal.
+   The search request are handled through an instance of OmdbApi.
+  
+- Class OmdbApi: this class manages OMBD's REST API operations, formatting request URLs, parsing and 
+   storing results. The results are parsed with the help of JSONCPP classes. The HTTP communication is
+   handled using an instance of the class CurlRest.
+   
+- Class CurlRest: this class encapsulates functions from the CURL library, to perform HTTP GETs.
+
+===== Observations:
+
+While only a command line version of this program is made available, the class OmdbApi was designed to be
+re-usable in a QT application, and expandable to manage more OMBD REST API operations.
